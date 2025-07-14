@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-public  class Main{
-    public static void main(String[] args){
+public  class palindrome {
+    public static void pali(String[] args){
         //palindrome 121 and the reverse number is a palindrome
         //taking an input from the user
         Scanner sc=new Scanner(System.in);
