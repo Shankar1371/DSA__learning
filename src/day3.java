@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class day3 {
-    public static void main(String[] args){
+    public static void day3(String[] args){
         Scanner sc=new Scanner(System.in);
         //here our task is to take input and print an array
         int[] a=new int[5];//here i have created an array with size 5
