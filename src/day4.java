@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class day4 {
-    public static void main(String[] args){
+    public static void day4(String[] args){
         //so here we are gonna learn about 2d array
         //int [][] ttw=new int[2][3];
         // here we have given 2 as the row number and 3 as column number
