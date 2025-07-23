@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class day5 {
-    public  static void main(String[] args) {
+    public  static void day5(String[] args) {
         //now create an object for the class student
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the student name:");
