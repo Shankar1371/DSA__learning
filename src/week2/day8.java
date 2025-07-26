@@ -3,7 +3,7 @@ package week2;
 import java.util.Scanner;
 
 public class day8 {
-    public static void main(String[] args){
+    public static void day8(String[] args){
         Scanner sc=new Scanner(System.in);
         //lets go with the reversing a string
         String name="shankar";
@@ -15,7 +15,23 @@ public class day8 {
         System.out.println("Enter the name to check the palindrome=");
         String pali=sc.nextLine();
         //now we got the name you can just reverse then name and store that to find that weather the given name is
-        System.out.println("palindrome="+palindrome(pali));
+        //System.out.println("palindrome="+palindrome(pali));
+
+        //counting the vowels and consonants
+        String s="The java programming language";
+        //first lets initate the vowels and consonants
+        int vowels=0;
+        int consonants=0;
+        s.toLowerCase();
+        for(char c:s.toCharArray()){
+            if("aeiou".indexOf(c)!=-1){
+                vowels++;
+            }
+            else{
+                consonants++;
+            }
+        }
+        System.out.println("vowels="+vowels+"consanats="+consonants);
 
     }
 
