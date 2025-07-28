@@ -3,7 +3,7 @@ package week2;
 import java.util.ArrayList;
 
 public class day9 {
-    public static void main(String[] args){
+    public static void day9(String[] args){
         //today is about arraylist
         //add five names and print them
         ArrayList<String> names=new ArrayList<String>();
