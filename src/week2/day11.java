@@ -42,5 +42,23 @@ public class day11 {
             simi.get(c).add(s);
         }
         System.out.println(simi);
+
+
+        //the last question for toady
+       // Sort a HashMap<String, Integer> by Value
+        //here the value is the integer and the key value is the string
+        //first lets  create the hashmap that contains the details
+        HashMap<String, Integer> dd=new HashMap<>();
+        //keeping the valuesmarks.
+        dd.put("A", 85);
+        dd.put("B", 92);
+        dd.put("C", 78);
+        //what is the easiest we can create a list called sorted with the hashmap as the input
+        List<Map.Entry<String,Integer>> sorted=new ArrayList<>(dd.entrySet());//each set in this is an entry in the list that has been created
+        sorted.sort((a,b)-> b.getValue()- a.getValue());//this is the lamda function that we are using that compares a with b value on what is great
+
+        for (Map.Entry<String, Integer> entry : sorted) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
     }
 }
