@@ -37,6 +37,7 @@ public class day11 {
             //but before that we need to divide the character of the word
             char c=s.charAt(0);
             //sometimes this simi can be null so what should we do for that
+            //the below line helps
             simi.putIfAbsent(c,new ArrayList<>());
             simi.get(c).add(s);
         }
