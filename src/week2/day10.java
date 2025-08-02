@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 
 public class day10 {
-    public static void main(String[] args){
+    public static void day10(String[] args){
         //problem 1
         //frequency counter using hashmap
         String str="programming";
