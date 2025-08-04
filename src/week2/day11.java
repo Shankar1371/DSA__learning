@@ -3,7 +3,7 @@ package week2;
 import java.util.*;
 
 public class day11 {
-    public static void main(String[] args) {
+    public static void mai(String[] args) {
         //here the first program of this day is word frequecy in a system
         String sen = "java is powerful and java is easy";
         //here we got the sentence we need to split the words with space
