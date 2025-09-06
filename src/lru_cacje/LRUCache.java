@@ -59,7 +59,26 @@ public int get(int key){
         Node node=map.get(key);
         //we check weather the key is there in the node or not
         if(node!=null){
-            //this element or node is there in the key that is 
+            //this element or node is there in the key that is
+            node.value=value;
+            movetofront(node);
+        }
+        else{
+            //if there is not there in the Hashmap or the stack we have to place the element at the the very end of the stack
+            Node newnode= new Node(key,value);
+            map.put(key,newnode);
+            //we have placed the key value pair into the stack of the lru cache
+            addafterhead(newnode);
+
+            //now if the size increases or exceeds the value that is required or set by the human
+            if(map.size()>capacity){
+                //we have to remove the least used from the stack and that can be done by
+                Node lru=tail.prev;
+                // we know that if the element is least used its gonna be infront of the tail that we have kept as a reference
+                removenode(lru);
+                map.remove(lru.key);
+
+            }
         }
 }
     private void movetofront(Node node) {
