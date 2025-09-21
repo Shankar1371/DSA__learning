@@ -23,8 +23,8 @@ class Bird implements Flyable, Swimmable{
     }
 }
 
-public class Main{
-    public static void main(String[] args){
+public class nadin{
+    public static void ma(String[] args){
         Flyable f=new Bird();
         Swimmable s=new Bird();
         //we can develop like this many forms also called as taking advantyage of polymorphisim in java
