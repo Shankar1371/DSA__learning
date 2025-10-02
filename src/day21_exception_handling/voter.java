@@ -28,8 +28,8 @@ class Dividetest {
 //now we are gonna use NUll pointer handling in java
 //what is null pointer
 //null pointer is that does not point to a valid memory location or object but instead holds a special , typically zero valued and address to indicate the invalidty
-public class Nulltest{
-    public static void main(String[] args){
+ class Nulltest{
+    public static void nopr(String[] args){
         try{
             String s=null;
             System.out.println(s.length());
@@ -38,3 +38,31 @@ public class Nulltest{
         }
     }
 }
+
+//custom exception like with throw and throws
+class AgeException extends Exception {
+    AgeException(String msg){
+        super(msg);
+    }
+}
+
+public class voter{
+    public static void checkAge(int age) throws AgeException{
+        if(age<18){
+            throw new AgeException("underage");
+        }
+        else{
+            System.out.println("eligible");
+        }
+
+    }
+
+    public static void main(String[] args){
+        try{
+            checkAge(16);
+        }catch (AgeException e){
+            System.out.println("error"+e.getMessage());
+        }
+    }
+}
+
