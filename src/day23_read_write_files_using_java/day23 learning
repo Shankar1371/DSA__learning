@@ -1,0 +1,12 @@
+file reading classes :
+- file -- represents a file or a directory
+- scanner -- reads the file(that is line by line)
+- buffer reader -- this helps in reading the file or large files in a faster pace
+
+
+now we are learning  about the file writing classes in java'
+- file writer --  writing a class in java
+- printwriter -- easy file output with println
+- bufferedwriter --effiecient writing
+
+for the exception in file i/o uses we will come across exceptions we have to use the try catch block
